@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jadwal Kuliah</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f1f7fc;
+            font-family: "Times New Roman", serif;
+            color: #315783;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: #8fcfeb;
+            padding: 12px 5px;
+            text-align: center;
+            border-bottom: 1px solid #b7d4ec;
+            box-shadow: 0 2px 5px rgba(49, 87, 131, 0.1);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #315783;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 7px 10px;
+            margin: 0 2px;
+            border: 1px solid #c3dced;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        nav a:hover {
+            background-color: #b9dcf5;
+            border-color: #8bbde2;
+            color: #24496b;
+        }
+
+        /* KOTAK KONTEN */
+        .container {
+            width: 700px;
+            max-width: calc(100% - 40px);
+            margin: 30px auto;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #b7d4ec;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            background-color: #dcecf9;
+            color: #24496b;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #8bbde2;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #b7d4ec;
+            padding: 9px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #c9e6fa;
+            color: #24496b;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f8ff;
+        }
+
+        tr:hover {
+            background-color: #e2f0fc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about-me.html">Tentang Saya</a>
+        <a href="educations.html">Riwayat Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="from.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+        <a href="table3.html">Tabel 3</a>
+    </nav>
+
+    <div class="container">
+
+        <h3>Jadwal Kuliah Semester 1</h3>
+
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Mata Kuliah</th>
+                <th>Ruangan</th>
+            </tr>
+
+            <tr>
+                <td>Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>Pemrograman Web</td>
+                <td>Lab 1</td>
+            </tr>
+
+            <tr>
+                <td>Selasa</td>
+                <td>10:00 - 12:00</td>
+                <td>Basis Data</td>
+                <td>Lab 2</td>
+            </tr>
+
+            <tr>
+                <td>Rabu</td>
+                <td>08:00 - 10:00</td>
+                <td>Algoritma</td>
+                <td>Ruang 201</td>
+            </tr>
+
+            <tr>
+                <td>Kamis</td>
+                <td>13:00 - 15:00</td>
+                <td>Sistem Operasi</td>
+                <td>Ruang 202</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Kegiatan Mahasiswa</td>
+                <td>Aula</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jadwal Perkuliahan</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f1f7fc;
+            font-family: "Times New Roman", serif;
+            color: #315783;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: #8fcfeb;
+            padding: 12px 5px;
+            text-align: center;
+            border-bottom: 1px solid #b7d4ec;
+            box-shadow: 0 2px 5px rgba(49, 87, 131, 0.1);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #315783;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 7px 10px;
+            margin: 0 2px;
+            border: 1px solid #c3dced;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        nav a:hover {
+            background-color: #b9dcf5;
+            border-color: #8bbde2;
+            color: #24496b;
+        }
+
+        /* KOTAK KONTEN */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #b7d4ec;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            color: #315783;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 40px;
+            padding: 15px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* TABEL */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #a9cce8;
+            padding: 9px 7px;
+        }
+
+        th {
+            background-color: #c9e6fa;
+            color: #24496b;
+            text-align: center;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f1f8ff;
+        }
+
+        .judul-tabel {
+            background-color: #dcecf9;
+            font-weight: bold;
+        }
+
+        .total td {
+            background-color: #c9e6fa !important;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        tr:hover td {
+            background-color: #e2f0fc;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: 96%;
+                padding: 8px;
+            }
+
+            table {
+                font-size: 11px;
+            }
+
+            th, td {
+                padding: 5px 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about-me.html">Tentang Saya</a>
+        <a href="educations.html">Riwayat Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="from.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+        <a href="table3.html">Tabel 3</a>
+    </nav>
+     <h3>Jadwal Perkuliahan Semester 1</h3>
+
+    <div class="container">
+
+        <table>
+            <tr>
+                <th rowspan="2">Hari</th>
+                <th rowspan="2">Jam</th>
+                <th colspan="2">Mata Kuliah</th>
+                <th rowspan="2">Ruangan</th>
+            </tr>
+
+            <tr>
+                <th>Kode</th>
+                <th>Nama Mata Kuliah</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>IF101</td>
+                <td>Pemrograman Web</td>
+                <td>Lab 1</td>
+            </tr>
+
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF102</td>
+                <td>Basis Data</td>
+                <td>Lab 2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Selasa</td>
+                <td>08:00 - 10:00</td>
+                <td>IF103</td>
+                <td>Algoritma</td>
+                <td>Ruang 201</td>
+            </tr>
+
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF104</td>
+                <td>Sistem Operasi</td>
+                <td>Ruang 202</td>
+            </tr>
+
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td>IF105</td>
+                <td>Jaringan Komputer</td>
+                <td>Lab 3</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Rabu</td>
+                <td>08:00 - 10:00</td>
+                <td>IF106</td>
+                <td>Pemrograman Mobile</td>
+                <td>Lab 4</td>
+            </tr>
+
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF107</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>Ruang 203</td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="text-align: center;">
+                    Kegiatan Akademik / Seminar
+                </td>
+                <td>Aula</td>
+            </tr>
+
+            <tr class="total">
+                <td colspan="2">Total Mata Kuliah</td>
+                <td colspan="2">7 Mata Kuliah</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

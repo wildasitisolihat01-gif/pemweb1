@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f1f7fc;
+            font-family: "Times New Roman", serif;
+            color: #315783;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: #8fcfeb;
+            padding: 12px 5px;
+            text-align: center;
+            border-bottom: 1px solid #b7d4ec;
+            box-shadow: 0 2px 5px rgba(49, 87, 131, 0.1);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #315783;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 7px 10px;
+            margin: 0 2px;
+            border: 1px solid #c3dced;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        nav a:hover {
+            background-color: #b9dcf5;
+            border-color: #8bbde2;
+            color: #24496b;
+        }
+
+        /* KOTAK FORMULIR */
+        .container {
+            width: 50%;
+            max-width: 600px;
+            min-width: 280px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #b7d4ec;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            background-color: #c9e6fa;
+            color: #24496b;
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #8bbde2;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 9px;
+            border: 1px solid #b7d4ec;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #315783;
+            font-family: "Times New Roman", serif;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .pilihan {
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: #c9e6fa;
+            color: #24496b;
+            border: 1px solid #8bbde2;
+            padding: 9px 18px;
+            margin-top: 15px;
+            margin-right: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Times New Roman", serif;
+        }
+
+        button:hover {
+            background-color: #b9dcf5;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                min-width: 0;
+            }
+
+            nav a {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about-me.html">Tentang Saya</a>
+        <a href="educations.html">Riwayat Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="from.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+        <a href="table3.html">Tabel 3</a>
+    </nav>
+
+    <div class="container">
+
+        <h3>Formulir Pendaftaran</h3>
+
+        <form>
+            <label>Nama Lengkap:</label>
+            <input type="text" placeholder="Masukkan nama">
+
+            <label>Email:</label>
+            <input type="email" placeholder="nama@email.com">
+
+            <label>Password:</label>
+            <input type="password">
+
+            <label>Umur:</label>
+            <input type="number" min="1">
+
+            <label>Tanggal Lahir:</label>
+            <input type="date">
+
+            <label>Jenis Kelamin:</label>
+            <div class="pilihan">
+                <input type="radio" name="jenis_kelamin" value="Laki-laki">
+                Laki-laki
+                <br>
+                <input type="radio" name="jenis_kelamin" value="Perempuan">
+                Perempuan
+            </div>
+
+            <label>Hobi:</label>
+            <div class="pilihan">
+                <input type="checkbox" name="hobi" value="Membaca">
+                Membaca
+                <br>
+                <input type="checkbox" name="hobi" value="Olahraga">
+                Olahraga
+                <br>
+                <input type="checkbox" name="hobi" value="Gaming">
+                Bermain game
+            </div>
+
+            <label>Alamat:</label>
+            <textarea rows="3" placeholder="Masukkan alamat"></textarea>
+
+            <br>
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
